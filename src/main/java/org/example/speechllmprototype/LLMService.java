@@ -16,7 +16,6 @@ public class LLMService {
             return "ERROR: OPENAI_API_KEY not set";
         }
         try {
-            String safeText = recognizedText.replace("\\", "\\\\").replace("\"", "\\\"");
             String json = """
                     {
                     "model": "gpt-3.5-turbo",
